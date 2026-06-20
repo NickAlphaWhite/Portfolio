@@ -1,0 +1,30 @@
+---
+import Layout from "../../components/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { ui } from "../../i18n/ui";
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en" } },
+    { params: { lang: "zh" } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: "en" | "zh" };
+const t = (key: string) => ui[lang][key as keyof typeof ui.en] || key;
+---
+
+<Layout title={t("about.title")} lang={lang}>
+  <Header />
+
+  <main class="about">
+    <h1 style="font-family:var(--font-display);font-size:var(--text-3xl);font-weight:600;letter-spacing:-0.02em;margin-bottom:var(--space-lg)">
+      {t("about.title")}
+    </h1>
+    <p>{t("about.content")}</p>
+    <p>{t("about.sources")}</p>
+  </main>
+
+  <Footer />
+</Layout>

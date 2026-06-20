@@ -1,0 +1,301 @@
+{
+  "props": {
+    "pageProps": {
+      "data": {
+        "name": "Inner Worlds",
+        "id": 205,
+        "header": {
+          "colleges": [
+            {
+              "name": "London College of Communication",
+              "slug": "london-college-of-communication"
+            }
+          ],
+          "curatedBy": "Louisa Rechenbach",
+          "subtitle": "UAL Showcase Collections",
+          "collectionDesc": "\"Inner Worlds: Artistic and Technological Perspectives on Mental Health\" is a collection of works that bridges the gap between art, technology, and mental wellness. Each project serves as a unique intersection where creativity meets the human psyche, offering ways to understand, express, and mitigate mental health. These projects collectively challenge the notion that mental health should remain in the shadows. They shine a spotlight on the often hidden struggles people face and encourage open dialogue.<p><br><p>The various works include a range of media—from sound art and virtual reality to user experience design and animation—while sharing a common goal: humanising the experience of mental health. Whether it's tackling workplace stress, addressing the needs of Highly Sensitive People, or crafting coping mechanisms for anxiety, each project is a microcosm of innovation with a focus on psychological well-being. The collection is reflective of artists committed to using their skills for social good.<p><br><p>The projects provide not just a momentary pause for thought, but a set of tools, experiences, and frameworks designed for lasting impact. Together, they establish a comprehensive narrative that validates the complex array of mental health experiences, breaking down stigmas and fostering a more inclusive and compassionate environment. In doing so, the collection of projects prompts a broader societal dialogue about mental health, urging us to rethink our approaches and attitudes, and spotlighting the boundless possibilities when art and technology unite for a cause as crucial as human well-being.<br><p><br><p><b>About the curator</b></p><br><p>Louisa is an award-winning documentary filmmaker and photographer based in London. Passionate about exploring the intersection of art and social commentary, her work focuses on creating character-driven narratives that shed light on important social issues. While studying at the University of the Arts London, Louisa was recognised by one of the most prestigious events in UK documentary film – the Grierson Awards, and over the past few years, she has been involved in four commissioned documentary projects for The New Yorker and The New York Times.<p><br><p><br><p><b><a href=\"https://www.louisarechenbach.com/\" target=\"_blank\"><em>To find out more, visit Louisa's website.</em></a></b>",
+          "collectionName": "Inner Worlds",
+          "media": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/12/15175830/E37A6630-1-5.jpg",
+          "sponsorAlt": null,
+          "sponsorLogo": null,
+          "captionText": "Kiesha Mundin, 2022 MA User Experience Design, London College of Communication, UAL ",
+          "altText": "",
+          "captionFallbackText": "Image credit not available",
+          "publishedDate": "2023-09-25T10:27:08.828Z"
+        },
+        "projects": [
+          {
+            "portfolioId": 410140,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/11/23190049/Add-a-subheading.png",
+            "assetType": "image",
+            "title": "Embrace Being Human at Work ",
+            "description": "<p>The final service design outcome, BEING HUMAN is an internal workplace communication platform that helps creative organisations build a psychologically safe workplace for their employees to share their challenges and support each other.</p><p>The platform allows employees to collaborate productively and supportively in day-to-day communications including new employee onboarding sessions, team meetings and regular check-ins.</p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Eri Hirose",
+            "studentUrl": "/project/410140/cover",
+            "type": "individual",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 416920,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/12/09200426/보정1-1.jpg",
+            "assetType": "image",
+            "title": "A Lifestyle Magazine For Sensitive People ",
+            "description": "<p>This project is to create a magazine for Highly Sensitive People(HSPs) who need holistic guidance on well-being and test its relevance and effectiveness through the Focus Group. The research started with the main question, &quot;What does a magazine which helps highly Sensitive People look like?&quot; Following that, the essential findings derived from psychology and publishing research were that sensitive people, particularly HSPs, want a publication that provides a sense of calmness, information about hypersensitivity, and community. </p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Dorothy Lee",
+            "studentUrl": "/project/416920/cover",
+            "type": "individual",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 482696,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/06/07120947/Screenshot-2023-05-09-at-16.28.10.jpg",
+            "assetType": "image",
+            "title": "Awaiting Room",
+            "description": "<p>Born from a piece of automatic writing, with the title being a play-on-words for asking what you (the audience) are really waiting for, this original sound-art work aims to transport audiences into altered states of consciousness and extract the truest forms of memory and emotion. Whether these states are positive or negative is within the receivers&#39; hands, the work acting as a vessel for outbursts of true emotional and physical response. Combining mediums of cinematography, slow-cinema and colourful synthesis, the work aims to influence the space and its documentation through the ambiguous serenity of the visuals &amp; sonics.  </p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Elliot Woods",
+            "studentUrl": "/project/482696/cover",
+            "type": "individual",
+            "flashingImages": true,
+            "awards": []
+          },
+          {
+            "portfolioId": 418823,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/12/16002410/cover-6.png",
+            "assetType": "image",
+            "title": "Baku ",
+            "description": "<p><i>Baku </i> is an interface application design that concentrates on alleviating negative post-nightmare distress in the general population and documenting a nightmare re-scripting journal in the manner of sound experiences. Inspired by imagery rehearsal therapy, art therapy, and cultural manifestations, the design outcome integrates modern psychotherapeutic research with traditional eastern imagery of Baku from Japanese folktales, borrowing the idea of &quot;the dream eater&quot;. </p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Zhe Lou",
+            "studentUrl": "/project/418823/cover",
+            "type": "individual",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 418456,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/12/15175828/Facebook-post-1-1.png",
+            "assetType": "image",
+            "title": "Well-Being Through Creativity ",
+            "description": "<p>“Well-being through Creativity” is a creative and mindful experience for people with emotions of anxiety which would allow them to control and minimise their symptoms. By fostering a sense of community and equipping people with imagination-based coping mechanisms, allowing people to manage and reduce these negative emotions. The process behind the design workshops enables people to share and express themselves through guidance and visual design. Using creativity to express imagination by drawing inspiration from observation, engaging in activities, and allowing ourselves to “play” can help process and control anxiety. </p><p>\n</p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Kiesha Mundin",
+            "studentUrl": "/project/418456/cover",
+            "type": "collaborative",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 467800,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/06/03004558/cafe2.jpg",
+            "assetType": "image",
+            "title": "Empty Store ",
+            "description": "<p>&quot;Empty Store&quot; is a collaborative AR immersive experience that merges physical reality with digital assets to tell a story about my experience in London, the challenges I encountered, and how I overcame them to feel confident and creative in this city. This project strongly focuses on digital fashion, where beautiful, colourful, and energetic garments made by 3D fashion artists represent my journey of overcoming daily difficulties.</p>",
+            "alternativeText": "3D modelled scene on Maya that is going to be accessible through AR.",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Anita Ghaffarian",
+            "studentUrl": "/project/467800/cover",
+            "type": "collaborative",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 472496,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/06/05104418/C6675173-2721-43EB-B584-90970404D04C.png",
+            "assetType": "image",
+            "title": "Shadows by Melissa Martin",
+            "description": "<p>Shadows is a 2D animated short film on anxiety, inspired by personal experience.</p><p>“A young teen named Iris experiences an anxiety attack, physically represented by a wolf-like creature which consumes her mind. We are taken into her mind as we see her unravel these overwhelming emotions”</p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Melissa Martin",
+            "studentUrl": "/project/472496/cover",
+            "type": "individual",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 473843,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/06/06090128/header-image.jpg",
+            "assetType": "image",
+            "title": "Dudel, a self-care brand for men ",
+            "description": "<p><b>The Challenge:</b> Suicide is the single biggest killer of males under 50. Whether due to societal expectations, traditional gender roles, or both, 40% of men do not feel comfortable talking about their mental health - and so they are left to suffer in silence.</p><p><b>The Brief:</b> Create a self-care brand for men that breaks down the stigma of male mental health, and encourages men to process their emotions in a healthy way.</p><p><b>My Response:</b> Dudel is a self-care brand that utilises the mindless mindfulness of doodling to break down the barriers that make the wellness industry feel so inaccessible to men. The Dudel Diary is a wellness journal without the words, giving its users a way to work through complex ideas and confusing emotions in a way that inspires creativity and relaxation.</p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Freya Wilson",
+            "studentUrl": "/project/473843/cover",
+            "type": "individual",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 414869,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/12/05154149/Untitled-2-1.png",
+            "assetType": "image",
+            "title": "Smart Support ",
+            "description": "<p>The aim of the research is to develop a strategic design framework for guiding potential users of mental health apps in order to optimise their user experience, ensuring ethical practice as well as the use of evidence-based techniques. </p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Ritu Gupta",
+            "studentUrl": "/project/414869/cover",
+            "type": "individual",
+            "flashingImages": false,
+            "awards": []
+          },
+          {
+            "portfolioId": 409997,
+            "source": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/11/23155408/A4备份-3%402x-1.jpg",
+            "assetType": "image",
+            "title": "Know Yourself ",
+            "description": "<p>The aim of this service is to reduce the risk of burnout among grassroots staff in Chinese state-owned enterprises (SOEs) by increasing their sense of accomplishment. \n\nThe service supports SOEs to help their staff to develop a mindset through mentoring, regular follow-up and adjustment so that they are constantly motivated to take action, gain fulfilment from their work and ultimately reduce or avoid burnout.</p>",
+            "alternativeText": "",
+            "forSale": false,
+            "saleUrl": "",
+            "student": "Bicheng Wang",
+            "studentUrl": "/project/409997/cover",
+            "type": "individual",
+            "flashingImages": false,
+            "awards": []
+          }
+        ],
+        "metaData": {
+          "title": "Inner Worlds - UAL Showcase",
+          "description": "\"Inner Worlds: Artistic and Technological Perspectives on Mental Health\" is a collection of works that bridges the gap between art, technology, and mental wellness.",
+          "image": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/12/15175830/E37A6630-1-5.jpg",
+          "url": "https://ualshowcase.arts.ac.uk/collection/inner-worlds",
+          "type": "website",
+          "og": {
+            "title": "Inner Worlds - UAL Showcase",
+            "description": "\"Inner Worlds: Artistic and Technological Perspectives on Mental Health\" is a collection of works that bridges the gap between art, technology, and mental wellness.",
+            "image": "https://portfolio-tools.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/12/15175830/E37A6630-1-5.jpg",
+            "url": "https://ualshowcase.arts.ac.uk/collection/inner-worlds",
+            "type": "website"
+          },
+          "ual": {
+            "pageType": "collection",
+            "course": null,
+            "college": "london-college-of-communication",
+            "collectionName": "Inner Worlds",
+            "collectionsId": "inner-worlds"
+          }
+        }
+      },
+      "globalFooters": {
+        "links": null,
+        "html": null
+      },
+      "theme": {
+        "name": "lightTheme",
+        "colors": {
+          "primary": {
+            "mainBg": "#F6F6F6",
+            "headerBg": "#F6F6F6",
+            "mainText": "#000",
+            "black": "#000",
+            "white": "#fff",
+            "pureBlack": "#0A0A0A",
+            "darkMain": "#171717",
+            "brightMain": "#F6F6F6",
+            "brightDisabled": "#D1D1D1",
+            "darkDisabled": "#3B3B3B",
+            "dark50": "#808080",
+            "lightGrey": "#F5F5F5"
+          },
+          "secondary": {
+            "deepYellow": "#FFB400",
+            "yellow": "#FFD022",
+            "brightYellow": "#FFED00",
+            "neonYellow": "#FFFF00",
+            "deepOrange": "#FF5000",
+            "orange": "#FF8500",
+            "brightOrange": "#FFB400",
+            "neonOrange": "#FE6F06",
+            "deepPink": "#C40E64",
+            "pink": "#E71657",
+            "brightPink": "#FF1464",
+            "neonPink": "#FC1890",
+            "deepPurple": "#693EC4",
+            "purple": "#9E65FB",
+            "brightPurple": "#D298FC",
+            "neonPurple": "#9D24F5",
+            "deepAqua": "#2774B6",
+            "aqua": "#20BCFF",
+            "brightAqua": "#00E2FF",
+            "neonAqua": "#19F9FF",
+            "deepBlue": "#2E00A3",
+            "blue": "#1F4EDC",
+            "brightBlue": "#006CFF",
+            "neonBlue": "#0000FF",
+            "accBlue": "#017BC8",
+            "deepGreen": "#00A200",
+            "green": "#00C73E",
+            "brightGreen": "#1AEB25",
+            "neonGreen": "#29FD2F",
+            "deepEmerald": "#0F7574",
+            "emerald": "#19A4A3",
+            "brightEmerald": "#2FEACF",
+            "neonEmerald": "#00FFDC"
+          }
+        },
+        "spacing": {
+          "none": "0",
+          "xSmall": "16px",
+          "small": "2vw",
+          "medium": "4vw",
+          "large": "8vw",
+          "xlarge": "16vw"
+        },
+        "grids": {
+          "col1of2": "span 12",
+          "col1of3": "span 8",
+          "col3of4": "span 18",
+          "col1of4": "span 6",
+          "col2of3": "span 16",
+          "fullInner": "span 24",
+          "mainCarouselImage": "span 13",
+          "smallCarouselImage": "span 3",
+          "gapCarouselImage": "span 1"
+        },
+        "breakpoints": {
+          "mobile": "(min-width: 320px)",
+          "tablet": "(min-width: 600px)",
+          "desktop": "(min-width: 1008px)",
+          "xlDesktop": "(min-width: 1280px)",
+          "xxlDesktop": "(min-width: 1600px)"
+        }
+      }
+    },
+    "__N_SSG": true
+  },
+  "page": "/collection/[slug]",
+  "query": {
+    "slug": "inner-worlds"
+  },
+  "buildId": "1PHL0BSilkAZOwSUlaVFG",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "gsp": true,
+  "locale": "en",
+  "locales": [
+    "en"
+  ],
+  "defaultLocale": "en",
+  "scriptLoader": []
+}

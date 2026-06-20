@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+import { ui } from "../i18n/ui";
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: "en" | "zh";
+}
+
+const { title, description, lang } = Astro.props;
+const siteName = ui[lang]["site.name"];
+const fullTitle = `${title} — ${siteName}`;
+const dir = lang === "zh" ? "ltr" : "ltr";
+---
+
+<!doctype html>
+<html lang={lang} dir={dir}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description || title} />
+    <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
+    <title>{fullTitle}</title>
+
+    <!-- Inline theme script: prevents flash of wrong theme -->
+    <script is:inline>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = stored || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

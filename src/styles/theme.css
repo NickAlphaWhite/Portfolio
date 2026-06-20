@@ -1,0 +1,164 @@
+/* ── Theme: Apple-Inspired Light & Dark ── */
+
+:root {
+  /* ── Light (default) ── */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --bg-tertiary: #e8e8ed;
+  --text-primary: #1d1d1f;
+  --text-secondary: #86868b;
+  --text-tertiary: #aeaeb2;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
+  --card-bg: #ffffff;
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  --card-hover-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --card-hover-lift: -4px;
+  --nav-bg: rgba(255, 255, 255, 0.72);
+  --nav-blur: saturate(180%) blur(20px);
+  --accent: #0071e3;
+  --accent-hover: #0077ed;
+  --overlay: rgba(0, 0, 0, 0.8);
+  --overlay-light: rgba(0, 0, 0, 0.5);
+  --selection: rgba(0, 113, 227, 0.2);
+  --focus-ring: 0 0 0 3px rgba(0, 113, 227, 0.4);
+
+  /* ── Spacing ── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* ── Radius ── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* ── Typography ── */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", Arial,
+    sans-serif;
+  --font-mono: "SF Mono", "Cascadia Code", "Fira Code", monospace;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", Arial,
+    sans-serif;
+
+  /* ── Type scale ── */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+
+  /* ── Layout ── */
+  --max-width: 1440px;
+  --content-padding: var(--space-xl);
+  --header-height: 52px;
+}
+
+/* ── Dark theme ── */
+[data-theme="dark"] {
+  --bg-primary: #000000;
+  --bg-secondary: #1d1d1f;
+  --bg-tertiary: #2d2d2f;
+  --text-primary: #f5f5f7;
+  --text-secondary: #86868b;
+  --text-tertiary: #6e6e73;
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --card-bg: #1d1d1f;
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --card-hover-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --nav-bg: rgba(0, 0, 0, 0.72);
+  --accent: #2997ff;
+  --accent-hover: #40a9ff;
+  --overlay: rgba(0, 0, 0, 0.92);
+  --overlay-light: rgba(0, 0, 0, 0.6);
+  --selection: rgba(41, 151, 255, 0.3);
+  --focus-ring: 0 0 0 3px rgba(41, 151, 255, 0.4);
+}
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+  transition: background-color var(--duration-normal) var(--ease-out),
+    color var(--duration-normal) var(--ease-out);
+}
+
+::selection {
+  background: var(--selection);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}

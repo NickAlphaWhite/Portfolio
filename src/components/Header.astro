@@ -1,0 +1,70 @@
+---
+import { ui } from "../i18n/ui";
+import ThemeToggle from "./ThemeToggle.astro";
+
+const lang = Astro.currentLocale || "en";
+const t = (key: keyof typeof ui.en) => ui[lang][key] || ui.en[key];
+const otherLang = lang === "en" ? "zh" : "en";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const isHome = Astro.url.pathname.endsWith(`/${lang}/`) || Astro.url.pathname.endsWith(`/${lang}`);
+const isAbout = Astro.url.pathname.includes("/about");
+---
+
+<header class="site-header">
+  <div class="container">
+    <a href={`${base}/${lang}/`} class="site-logo">{t("site.name")}</a>
+    <nav class="site-nav">
+      <a href={`${base}/${lang}/`} class={isHome ? "active" : ""}>{t("nav.browse")}</a>
+      <a href={`${base}/${lang}/about`} class={isAbout ? "active" : ""}>{t("nav.about")}</a>
+    </nav>
+    <div class="header-actions">
+      <!-- Inline search -->
+      <div class="header-search" id="header-search">
+        <button class="header-search-btn" id="header-search-btn" aria-label={t("search.placeholder")}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <input
+          type="search"
+          id="hero-search-input"
+          class="header-search-input"
+          placeholder={t("search.placeholder")}
+          autocomplete="off"
+          style="display:none"
+        />
+      </div>
+      <ThemeToggle />
+      <div class="lang-toggle">
+        <a
+          href={`${base}/en/${Astro.url.pathname.split("/").slice(3).join("/")}`}
+          class={lang === "en" ? "active" : ""}
+          aria-label="English"
+        >EN</a>
+        <a
+          href={`${base}/zh/${Astro.url.pathname.split("/").slice(3).join("/")}`}
+          class={lang === "zh" ? "active" : ""}
+          aria-label="中文"
+        >中</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById("header-search-btn");
+  const input = document.getElementById("hero-search-input") as HTMLInputElement;
+  if (btn && input) {
+    btn.addEventListener("click", () => {
+      const shown = input.style.display !== "none";
+      if (shown) {
+        input.style.display = "none";
+        input.value = "";
+        input.dispatchEvent(new Event("input"));
+      } else {
+        input.style.display = "";
+        input.focus();
+      }
+    });
+  }
+</script>

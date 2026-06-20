@@ -1,0 +1,15 @@
+---
+import { ui } from "../i18n/ui";
+const lang = Astro.currentLocale || "en";
+const t = (key: keyof typeof ui.en) => ui[lang][key] || ui.en[key];
+
+// Read last updated from data file if available, else use build time
+const now = new Date().toISOString().split("T")[0];
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <span>{t("footer.updated")}: {now}</span>
+    <span>{t("footer.built")}</span>
+  </div>
+</footer>

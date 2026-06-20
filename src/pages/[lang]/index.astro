@@ -1,0 +1,66 @@
+---
+import type { PortfolioItem } from "../../types";
+import Layout from "../../components/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import FilterBar from "../../components/FilterBar.astro";
+import ItemCard from "../../components/ItemCard.astro";
+import { ui } from "../../i18n/ui";
+
+// Astro content collection — import the JSON directly
+import allItems from "../../content/items/data.json";
+
+const items = allItems as PortfolioItem[];
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en" } },
+    { params: { lang: "zh" } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: "en" | "zh" };
+const t = (key: string) => ui[lang][key as keyof typeof ui.en] || key;
+
+// Get unique institutions
+const institutions = [...new Set(items.map(i => i.institution))].sort();
+
+// Separate featured items
+const featured = items.filter(i => i.is_featured);
+const regular = items.filter(i => !i.is_featured);
+const displayItems = [...featured, ...regular];
+---
+
+<Layout
+  title={t("nav.browse")}
+  description={t("site.tagline")}
+  lang={lang}
+>
+  <Header />
+
+  <!-- Layout: Content + Sidebar -->
+  <div class="layout">
+    <main class="layout-content">
+      <section class="hero">
+        <h1 class="hero-title animate-fade-in">{t("site.name")}</h1>
+        <p class="hero-subtitle animate-fade-in-up">{t("site.tagline")}</p>
+      </section>
+      <div class="gallery-grid stagger-children" id="gallery">
+        {displayItems.length > 0 ? (
+          displayItems.map(item => (
+            <ItemCard {item} {lang} />
+          ))
+        ) : (
+          <div class="empty-state" id="empty-state">
+            <div class="empty-state-icon">—</div>
+            <p class="empty-state-text">{t("search.no_results")}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  </main>
+    <FilterBar {lang} {institutions} activeCategory="all" activeInstitution="all" />
+  </div>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,76 @@
+---
+import type { PortfolioItem } from "../types";
+import { CATEGORY_LABELS } from "../types";
+
+interface Props {
+  item: PortfolioItem;
+  lang: "en" | "zh";
+}
+
+const { item, lang } = Astro.props;
+const title = lang === "zh" ? item.title_zh : item.title_en;
+const author = lang === "zh" ? item.author_name_zh : item.author_name_en;
+const catLabel = CATEGORY_LABELS[item.category][lang];
+const searchText = `${item.title_en} ${item.title_zh} ${item.author_name_en} ${item.author_name_zh} ${item.tags.join(" ")} ${item.institution}`;
+
+// Use real image if available, otherwise local SVG
+const hasExternal = item.thumbnail?.startsWith("http");
+const localSvg = `/Portfolio/images/items/${item.id}.svg`;
+
+// Category color palette for placeholder
+const colors: Record<string, string[]> = {
+  graphic_design: ["#FF6B6B", "#FFE66D"],
+  ui_ux: ["#4ECDC4", "#45B7D1"],
+  industrial_design: ["#F7DC6F", "#F39C12"],
+  illustration: ["#A29BFE", "#6C5CE7"],
+  motion_graphics: ["#00B894", "#00CEC9"],
+  photography: ["#2D3436", "#636E72"],
+  fashion: ["#FD79A8", "#E84393"],
+  architecture: ["#74B9FF", "#0984E3"],
+  fine_art: ["#E17055", "#D63031"],
+  mixed_media: ["#A3CB38", "#6AB04C"],
+};
+const [c1, c2] = colors[item.category] || colors.mixed_media;
+const initials = title.slice(0, 2).toUpperCase();
+---
+
+<a
+  href={item.source_url || "#"}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="item-card card-hover"
+  data-category={item.category}
+  data-institution={item.institution}
+  data-search={searchText}
+>
+  <div class="item-card-image" style={`aspect-ratio: ${item.aspect_ratio || 1.5}`}>
+    {hasExternal ? (
+      <img src={item.thumbnail} alt={title} loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+    ) : (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" class="card-svg">
+        <defs>
+          <linearGradient id={`g-${item.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color={c1} stop-opacity="0.9"/>
+            <stop offset="100%" stop-color={c2} stop-opacity="0.85"/>
+          </linearGradient>
+        </defs>
+        <rect width="800" height="500" fill={`url(#g-${item.id})`} />
+        <circle cx="85%" cy="15%" r="120" fill="rgba(255,255,255,0.07)"/>
+        <circle cx="15%" cy="85%" r="80" fill="rgba(0,0,0,0.04)"/>
+        <text x="50%" y="55%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="72" font-weight="700" fill="rgba(255,255,255,0.8)">{initials}</text>
+        <text x="50%" y="88%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="500" fill="rgba(255,255,255,0.55)">{item.institution}</text>
+      </svg>
+    )}
+    <span class="item-card-badge">{catLabel}</span>
+  </div>
+  <div class="item-card-body">
+    <h3 class="item-card-title">{title}</h3>
+    <p class="item-card-meta">
+      {author && <>{author} · </>}{item.institution}
+    </p>
+  </div>
+</a>
+
+<style>
+  .card-svg { width: 100%; height: 100%; display: block; }
+</style>

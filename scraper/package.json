@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-scraper",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "scrape": "npx tsx src/index.ts",
+    "scrape:rca": "npx tsx src/sources/rca.ts",
+    "scrape:cmu": "npx tsx src/sources/cmu.ts",
+    "scrape:mit": "npx tsx src/sources/mit.ts",
+    "scrape:rca2024": "npx tsx src/sources/rca2024.ts",
+    "scrape:core77": "npx tsx src/sources/core77.ts",
+    "scrape:yankodesign": "npx tsx src/sources/yankodesign.ts",
+    "scrape:dezeen": "npx tsx src/sources/dezeen.ts",
+    "scrape:manamana": "npx tsx src/sources/manamana.ts",
+    "scrape:ual": "npx tsx src/sources/ual.ts",
+    "scrape:nyu-itp": "npx tsx src/sources/nyu-itp.ts",
+    "scrape:risd": "npx tsx src/sources/risd.ts",
+    "scrape:links": "npx tsx src/sources/link-only.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "playwright": "^1.61.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}

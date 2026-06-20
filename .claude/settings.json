@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev)",
+      "Bash(npm run build)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:rca)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:mit)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:cmu)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:core77)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:dezeen)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:yankodesign)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:risd)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:ual)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:nyu-itp)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:manamana)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:links)",
+      "Bash(cd *portfolio-inspiration/scraper; npm run scrape:rca2024)",
+      "Bash(cd *portfolio-inspiration; npx tsx scripts/generate-placeholders.ts)",
+      "Bash(cd *portfolio-inspiration; npx tsx scripts/clean-data.ts)",
+      "Bash(cd *portfolio-inspiration/scraper; npx tsx extract-thumbnails.ts)",
+      "Bash(Get-Process node *)",
+      "Bash(Stop-Process -Id *)",
+      "Bash(netstat -ano *)"
+    ]
+  }
+}

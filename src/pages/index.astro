@@ -1,0 +1,18 @@
+---
+// Root path: detect language and redirect
+const url = new URL(Astro.request.url);
+const path = url.pathname;
+
+// If already on a lang-prefixed path, don't redirect
+if (path.match(/^\/(en|zh)\//) || path === "/en" || path === "/zh") {
+  return Astro.redirect(path.replace(/\/$/, "") + "/");
+}
+
+// Detect preferred language from Accept-Language header or default to en
+const acceptLang = Astro.request.headers.get("accept-language") || "";
+const prefersZh = acceptLang.toLowerCase().includes("zh");
+const lang = prefersZh ? "zh" : "en";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+return Astro.redirect(`${base}/${lang}/`);
+---
